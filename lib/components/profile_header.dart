@@ -8,14 +8,40 @@ class ProfileHeader extends StatelessWidget {
     return Row(
       children: [
         SizedBox(width: 20),
-        _buildHeaderAvater(),
+        _buildHeaderAvatar(),
         SizedBox(width: 20),
         _buildHeaderProfile(),
       ],
     );
   }
 
-  SizedBox _buildHeaderProfile() => SizedBox(width: 20);
+  Widget _buildHeaderAvatar() {
+    return SizedBox(
+      width: 100,
+      height: 100,
+      child: CircleAvatar(
+        backgroundImage: AssetImage("assets/avatar.png"),
+      ),
+    );
+  }
 
-  SizedBox _buildHeaderAvater() => SizedBox(width: 20);
+  Widget _buildHeaderProfile() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          "_jh_jo",
+          style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),
+        ),
+        Text(
+          "프로그래머",
+          style: TextStyle(fontSize: 20),
+        ),
+        Text(
+          "지망생",
+          style: TextStyle(fontSize: 15),
+        ),
+      ],
+    );
+  }
 }
