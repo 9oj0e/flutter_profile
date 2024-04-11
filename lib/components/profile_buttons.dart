@@ -1,0 +1,20 @@
+import 'package:flutter/material.dart';
+
+class ProfileButtons extends StatelessWidget {
+  const ProfileButtons({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [
+        _buildFollowButton(),
+        _buildMessageButton(),
+      ],
+    );
+  }
+
+  SizedBox _buildFollowButton() => SizedBox();
+
+  SizedBox _buildMessageButton() => SizedBox();
+}
