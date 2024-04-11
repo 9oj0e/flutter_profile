@@ -1,21 +1,10 @@
 import 'package:flutter/material.dart';
 
-class ProfileHeader extends StatelessWidget {
-  const ProfileHeader({super.key});
+class ProfileDrawer extends StatelessWidget {
+  const ProfileDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        SizedBox(width: 20),
-        _buildHeaderAvater(),
-        SizedBox(width: 20),
-        _buildHeaderProfile(),
-      ],
-    );
+    return const Placeholder();
   }
-
-  SizedBox _buildHeaderProfile() => SizedBox(width: 20);
-
-  SizedBox _buildHeaderAvater() => SizedBox(width: 20);
 }
